@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Colorful event</title>
+    <style>
+        #para {
+            font-size: 40px;
+        }
+    </style>
+    <script>
+        function over() {
+            document.getElementById("para").style.color = "red"
+        }
+        function out() {
+            document.getElementById("para").style.color = "blue"
+        }
+        function Red_over() {
+            document.getElementById("red").style.color = "red"
+        }
+        function Red_out() {
+            document.getElementById("red").style.color = "black"
+        }
+        function Green_over() {
+            document.getElementById("green").style.color = "green"
+        }
+        function Green_out() {
+            document.getElementById("green").style.color = "black"
+        }
+        function Blue_over() {
+            document.getElementById("blue").style.color = "blue"
+        }
+        function Blue_out() {
+            document.getElementById("blue").style.color = "black"
+        }
+    </script>
+</head>
+<body>
+    <div id = "para" onmouseover="over(this)" onmouseout="out(this)">
+        Hover on this paragraph
+    </div>
+    <div id="red" onmouseover="Red_over(this)" onmouseout="Red_out(this)">
+        This is red text
+    </div>
+    <div id="green" onmouseover="Green_over(this)" onmouseout="Green_out(this)">
+        This is green text
+    </div>
+    <div id="blue" onmouseover="Blue_over(this)" onmouseout="Blue_out(this)">
+        This is blue text
+    </div>
+</body>
+</html>
